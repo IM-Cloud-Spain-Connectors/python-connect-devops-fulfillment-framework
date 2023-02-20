@@ -5,6 +5,7 @@
 #
 from logging import LoggerAdapter
 
+from rndi.cache.adapters.postgresql.adapter import provide_postgresql_cache_adapter
 from rndi.cache.adapters.sqlite.adapter import provide_sqlite_cache_adapter
 from rndi.cache.contracts import Cache
 from rndi.cache.provider import provide_cache
@@ -15,4 +16,5 @@ class CacheServiceProvider(ServiceProvider):
     def provide_cache(self, config: dict, logger: LoggerAdapter) -> Cache:
         return provide_cache(config, logger, {
             'sqlite': provide_sqlite_cache_adapter,
+            'postgresql': provide_postgresql_cache_adapter,
         })

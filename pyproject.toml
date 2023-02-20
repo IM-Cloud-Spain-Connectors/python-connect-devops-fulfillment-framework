@@ -32,6 +32,7 @@ keywords = [
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4"
 rndi-cache-interface = { git = "https://github.com/othercodes/python-cache-interface.git", branch = "master" }
+rndi-cache-postgresql-adapter = { git = "https://github.com/othercodes/python-cache-postgresql-adapter.git", branch = "master" }
 rndi-cache-sqlite-adapter = { git = "https://github.com/othercodes/python-cache-sqlite-adapter.git", branch = "master" }
 rndi-connect-api-facades = { git = "https://github.com/othercodes/python-connect-api-facades.git", branch = "master" }
 rndi-connect-business-objects = { git = "https://github.com/othercodes/python-connect-business-objects.git", branch = "master" }
