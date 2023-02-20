@@ -19,6 +19,7 @@ from rndi.dicontainer.adapter import BaseServiceProvider as ServiceProvider, Con
 from rndi.connect.devops_fulfillment_framework.providers.cache import CacheServiceProvider
 from rndi.connect.devops_fulfillment_framework.providers.configuration import ConfigurationServiceProvider
 from rndi.connect.devops_fulfillment_framework.providers.connect import ConnectServiceProvider
+from rndi.connect.devops_fulfillment_framework.providers.offline import OfflineServiceProvider
 
 AnyConnectClient = Union[ConnectClient, AsyncConnectClient]
 
@@ -26,6 +27,7 @@ AnyConnectClient = Union[ConnectClient, AsyncConnectClient]
 class Saga(ABC):
     providers: Dict[str, Type[ServiceProvider]] = {
         'cache': CacheServiceProvider,
+        'offline': OfflineServiceProvider,
     }
 
     def __init__(self, providers: Optional[Dict[str, ServiceProvider]] = None):
