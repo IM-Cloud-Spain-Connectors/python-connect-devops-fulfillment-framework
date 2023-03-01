@@ -31,14 +31,14 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = ">=3.8.1,<4"
-rndi-cache-interface = { git = "https://github.com/othercodes/python-cache-interface.git", branch = "master" }
-rndi-cache-sqlite-adapter = { git = "https://github.com/othercodes/python-cache-sqlite-adapter.git", branch = "master" }
-rndi-connect-api-facades = { git = "https://github.com/othercodes/python-connect-api-facades.git", branch = "master" }
-rndi-connect-business-objects = { git = "https://github.com/othercodes/python-connect-business-objects.git", branch = "master" }
-rndi-connect-business-transaction-middleware = { git = "https://github.com/othercodes/python-connect-business-transaction-middleware.git", branch = "master" }
-rndi-connect-devops-logger-adapter = { git = "https://github.com/othercodes/python-connect-devops-logger-adapter.git", branch = "master" }
-rndi-connect-request-offline-criteria = { git = "https://github.com/othercodes/python-connect-request-offline-criteria.git", branch = "master" }
-rndi-dicontainer = { git = "https://github.com/othercodes/python-dicontainer.git", branch = "master" }
+rndi-cache-interface = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-cache-interface.git", branch = "master" }
+rndi-cache-sqlite-adapter = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-cache-sqlite-adapter.git", branch = "master" }
+rndi-connect-api-facades = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-connect-api-facades.git", branch = "master" }
+rndi-connect-business-objects = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-connect-business-objects.git", branch = "master" }
+rndi-connect-business-transaction-middleware = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-connect-business-transaction-middleware.git", branch = "master" }
+rndi-connect-devops-logger-adapter = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-connect-devops-logger-adapter.git", branch = "master" }
+rndi-connect-request-offline-criteria = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-connect-request-offline-criteria.git", branch = "master" }
+rndi-dicontainer = { git = "https://github.com/IM-Cloud-Spain-Connectors/python-dicontainer.git", branch = "master" }
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.0"
